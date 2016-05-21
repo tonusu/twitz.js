@@ -53,7 +53,7 @@ function buildTwitz(start, step, LoadMore) {
 					j++;
 					widgetshtml += '<div id="' + arr[b - start][j] + '" class="' + brkstyle + '">';
 					j--;
-					widgetshtml += '<div class="title"><h2 class="tname">' + arr[b - start][j];
+					widgetshtml += '<div class="ttitle"><h2 class="tname">' + arr[b - start][j];
 					widgetshtml += '</h2>';
 					j++;
 					widgetshtml += '<h2 class="taccount"><a href="https://twitter.com/' + arr[b - start][j] + '"';
@@ -76,11 +76,9 @@ function buildTwitz(start, step, LoadMore) {
 				newStart = start;
 				newStep = step;
 
-				moreButton = '<a href="javascript:void(0);" id="moreTwitz" class="button" onClick="buildTwitz(' + newStart + ',' + newStep + ');">' + moreText + '</a>';
-				console.log(moreButton);
+				moreButton = '<a href="javascript:void(0);" id="moreTwitz" class="twitz-button" onClick="buildTwitz(' + newStart + ',' + newStep + ');">' + moreText + '</a>';
 			} else {
 				moreButton = '';
-				console.log("Clearing more button");
 			}
 
 			//ADDING NEW TWITZ
@@ -93,9 +91,7 @@ function buildTwitz(start, step, LoadMore) {
 
 
 	else {
-		console.log("fewer than step");
 		newStep = acnts.length - start;
-		console.log(newStep);
 		buildTwitz(newStart, newStep);
 		document.getElementById('moreTwitz').remove();
 	}
