@@ -2,7 +2,7 @@
 
 ## What is it?
 
-Twitz.js is a pure js library that *somehow* overcomes a lot of hassle and constraints of the twitter API and lets you load many different twitter user timeline widgets effortlessly.
+Twitz.js is a pure js library that *somehow* overcomes most of hassle and constraints of the twitter API and lets you  load and manage many different twitter user timeline widgets effortlessly.
 
 The list of twitter accounts is easily manageable through the twitz.setup.js file
 
