@@ -1,0 +1,163 @@
+/* CUSTOM TWITZ STYLIN */ 
+
+
+html{
+font-size:16px;
+}
+
+.twitz{
+float:left;
+width: 30%;
+margin: 20px 1% 0.5%;
+overflow: hidden;
+moz-box-shadow: 1px 1px 6px #444;
+-webkit-box-shadow: 1px 1px 6px #444;
+box-shadow: 1px 1px 6px #444;
+-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=1, Direction=135, Color='#444444')";
+filter: progid:DXImageTransform.Microsoft.Shadow(Strength=1, Direction=135, Color='#444444');
+}
+
+.double-twitz{
+width:46%;
+}
+
+/* GENERAL STYLIN */
+
+.container {
+max-width:980px;
+margin:0 auto;
+padding: 0;
+}
+
+
+.button {
+position: relative;
+color: #313131;
+text-decoration: none;
+background-color:#fff;
+font-family: 'Courier New', Courier, monospace;
+font-weight: 900;
+font-size: 2.5em;
+display: block;
+overflow:hidden;
+padding:20px;
+-webkit-box-shadow: 0px 9px 0px #313131, 0px 9px 25px rgba(0,0,0,.7);
+-moz-box-shadow: 0px 9px 0px #313131, 0px 9px 25px rgba(0,0,0,.7);
+box-shadow: 0px 9px 0px #313131, 0px 9px 25px rgba(0,0,0,.7);
+margin: 30px 15px;
+text-align: center;
+-webkit-transition: all .1s ease;
+-moz-transition: all .1s ease;
+-ms-transition: all .1s ease;
+-o-transition: all .1s ease;
+transition: all .1s ease;
+width:auto;
+height:60px;
+line-height:50px;
+float:left;
+text-shadow: 0 0px 10px rgba(255,255,255,1);
+border-radius: 50px;
+}
+.button:hover {
+-webkit-box-shadow: 0px 3px 0px #ccc, 0px 3px 6px rgba(0,0,0,.9);
+-moz-box-shadow: 0px 3px 0px #ccc, 0px 3px 6px rgba(0,0,0,.9);
+box-shadow: 0px 3px 0px #ccc, 0px 3px 6px rgba(0,0,0,.9);
+position: relative;
+top: 1px;
+}
+.button:active {
+-webkit-box-shadow: 0px 3px 0px #ccc, 0px 3px 6px rgba(0,0,0,.9);
+-moz-box-shadow: 0px 3px 0px #ccc, 0px 3px 6px rgba(0,0,0,.9);
+box-shadow: 0px 3px 0px #ccc, 0px 3px 6px rgba(0,0,0,.9);
+position: relative;
+top:6px;
+}
+
+#moreTwitz{
+margin: 20px auto;
+float: none;
+clear: both;
+}
+
+.tbox {
+height: 400px;
+padding: 5px;
+margin: 0;
+background: #fff;
+border-top: 3px solid #000;
+border-bottom: 2px solid #000;
+box-shadow: inset 1px 6px 9px -6px;
+}
+
+.title {
+position: relative;
+width: 100%;
+overflow: hidden;
+text-align:center;
+height: 56px;
+max-height: 56px;
+}
+.tname {
+overflow: hidden;
+padding: 0;
+font-weight: 900;
+font-size: 1.5rem;
+font-family: 'Courier New', Courier, monospace;
+color: #000;
+text-shadow: 1px 1px 1px #666666;
+background: #fff;
+border-radius: 5px;
+position: relative;
+top: -15px;
+}
+
+.taccount {
+background: #fff;
+position: relative;
+top: -55px;
+float: right;
+}
+
+.taccount a{
+overflow: hidden;
+text-decoration: none;
+font-weight:900;
+font-size:0.7rem;
+border-top: 1px dotted #000000;
+font-family: 'Courier New', Courier, monospace;
+color: #000;
+}
+
+/* BREAKPOINTS */
+
+@media only screen and (max-width:768px) {
+
+html{font-size:0.7rem;}
+.double-twitz {width:335px;}
+.twitz {width:31%;}
+
+}
+
+@media only screen and (min-width : 434px) and (max-width : 675px) {
+
+.twitz, .double-twitz { width:47%;}
+
+}
+
+@media only screen and (max-width : 433px) {
+
+.twitz, .double-twitz {
+width: 90%;
+margin: 15px auto;
+float: none;
+}
+
+}
+
+/* VERY SMALL */
+
+@media only screen and (max-width : 300px) {
+
+.twitz, .double-twitz {width: 90%;}
+
+}
