@@ -6,7 +6,7 @@ Twitz.js is a pure js library that *somehow* overcomes most of hassle and constr
 
 The list of twitter accounts is easily manageable through the twitz.setup.js file
 
-[SEE THE DEMO](http://positeam.net/twitz.js/)
+[TWITZ.JS DEMO](http://positeam.net/twitz.js/)
 
 
 ## Can I customize it?
@@ -18,13 +18,13 @@ Every set of widgets that is loaded is first shuffled - future plans to make thi
 
 ## What do I need to set it up?
 
-+ Sign in to twitter and go to [your twitter lists](https://twitter.com/lists) and create a dummy list with a dummy user and public status (if you dont have one already)
++ Sign in to twitter and go to [your twitter lists](https://twitter.com/lists) and create a dummy list with public status (if you dont have one already)
 
-+ Now go to [your widgets](https://twitter.com/settings/widgets) and create a "list" widget for the dummy list , copy the url and the id of this list
++ Now go to [your widgets](https://twitter.com/settings/widgets) and create a "list" widget for the dummy list. Then from the generated code copy the url and the id of this list widget
 
 Example
 list url 'https://twitter.com/ExampleTwitterUsername/ExamplePublicTwitterListName';
-list id  '123456789012345678';
+widget id  '123456789012345678';
 
 You can take these from an existing widget for public list as well
 
