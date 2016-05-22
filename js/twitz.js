@@ -1,5 +1,4 @@
-//MICHALIS PSITOS
-
+//MICHALIS PSITOS github.com/tonusu/twitz.js
 
 // Better NOT edit variables below
 var wid1 = 520;   //180 - 520
@@ -22,15 +21,12 @@ function buildTwitz(start, step, LoadMore) {
 	if (start + step <=  acnts.length){
 		if (start + step ==  acnts.length){LoadMore=false;}
 
-
-
 			//NEW ARRAY BASED ON THE STEP
 			var arr = [];
 			for (var i=start; i<end; i++) {
 				arr.push(acnts[i]);
 			}
 			shuffle(arr);
-
 
 			//REMOVING LAST MORE BUTTON OR DUMMY PLACEHOLDER
 			document.getElementById('moreTwitz').remove();
@@ -43,8 +39,6 @@ function buildTwitz(start, step, LoadMore) {
 				script.src = 'http://platform.twitter.com/widgets.js';
 				d.getElementsByTagName('head')[0].appendChild(script);
 			}(document));
-
-
 
 			//MAIN LOOP
 			for (var b=start; b<end; b++) {
@@ -86,9 +80,8 @@ function buildTwitz(start, step, LoadMore) {
 				newStep = step;
 
 				moreButton = '<a href="javascript:void(0);" id="moreTwitz" class="twitz-button" onClick="buildTwitz(' + newStart + ',' + newStep + ');">' + moreText + '</a>';
-			} else {
-				moreButton = '';
-			}
+			} 
+			else {moreButton = '';}
 
 			//ADDING NEW TWITZ
 			var more = document.createElement("div");
@@ -96,8 +89,6 @@ function buildTwitz(start, step, LoadMore) {
 			document.getElementById("twitz-container1").appendChild(more);
 
 			}
-
-
 
 	else {
 		newStep = acnts.length - start;
@@ -107,7 +98,6 @@ function buildTwitz(start, step, LoadMore) {
 	//END OF MAJOR IF CHECKING REMAINING BRIKS AND MORE
 }
 
-
 //ARRAY SHUFFLING
 // Fisher-Yates (aka Knuth) Shuffle.
 // See github.com/coolaj86/knuth-shuffle
@@ -116,22 +106,17 @@ function shuffle(array) {
 	var currentIndex = array.length,
 		temporaryValue, randomIndex;
 
-
 	while (0 !== currentIndex) {
-
 		randomIndex = Math.floor(Math.random() * currentIndex);
 		currentIndex -= 1;
 		temporaryValue = array[currentIndex];
 		array[currentIndex] = array[randomIndex];
 		array[randomIndex] = temporaryValue;
 	}
-
 	return array;
 }
 
-
-
-//FUNCTION TO REMOVE
+//REMOVE FUNCTION
 Element.prototype.remove = function() {
 	this.parentElement.removeChild(this);
 };
@@ -142,3 +127,4 @@ NodeList.prototype.remove = HTMLCollection.prototype.remove = function() {
 		}
 	}
 };
+ 
