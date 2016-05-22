@@ -13,14 +13,6 @@ var classname2 = 'double-twitz'; //a css class name for the wrapper of widget st
 var hei1 = 400; //the height of the actual widget
 var moreText = 'BRING IT ON'; //The loading button text
 
-// Better NOT edit variables below
-var wid1 = 520;   //180 - 520
-var end = 0;
-var start = 0;
-var step = 0;
-var LoadMore = true;
-
-
 
 // ACOUNTS
 
@@ -57,7 +49,7 @@ var acnts = [
 ["GSM ARENA", "gsmarena_com", "1"]
 ];
 
-buildTwitz(0,6,true);
+buildTwitz(0,6,true); //Initiating twitz.js
 
 // buildTwitz(
 // 1	start of twitz list to rende .0 the beginning,

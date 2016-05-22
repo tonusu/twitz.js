@@ -1,5 +1,14 @@
 //MICHALIS PSITOS
 
+
+// Better NOT edit variables below
+var wid1 = 520;   //180 - 520
+var end = 0;
+var start = 0;
+var step = 0;
+var LoadMore = true;
+
+
 //TWITZ BUILDING FUNCTION
 
 function buildTwitz(start, step, LoadMore) {
