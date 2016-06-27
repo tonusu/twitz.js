@@ -1,25 +1,24 @@
 //MICHALIS PSITOS github.com/tonusu/twitz.js
 //twitz.js setup file
 
-// MASTER SETUP
+/************************************************************/
+// Edit variables below
+/************************************************************/
 
-// Edit variables below 
-var bordercolor = '#fff'; //widget bordercolor
-var listlink = 'https://twitter.com/ExampleTwitterUsername/ExamplePublicTwitterListName'; //EDIT THIS. the url of your list
-var widgetid = 'TwitterListIDNumber'; //EDIT THIS. the id of your list
+var listlink = 'https://twitter.com/_tonusu/lists/twitz.js'; //EDIT THIS. the url of your list
+var widgetid = '298160141411418112'; //EDIT THIS. the id of your list
+
+var TwitzContainer = 'twitz-container1'; // the container you want to load the twitz in. They will be appended
 var linkcolor = '#ff0000'; //the color of links in the widget
-var classname1 = 'twitz'; //a css class name for the wrapper of widget sstyle 1 .default is 1/3ish
-var classname2 = 'double-twitz'; //a css class name for the wrapper of widget style 2 .default is 1/2ish
+var classname1 = 'twitz'; //a css class name for the wrapper of widget style 1 .default css is 1/3ish
+var classname2 = 'double-twitz'; //a css class name for the wrapper of widget style 2 .default css is 1/2ish
 var hei1 = 400; //the height of the actual widget
-var moreText = 'BRING IT ON'; //The loading button text
-
-// ACOUNTS
-
-var acnts = [
+var moreText = 'MORE PLEASE'; //The loading button text
+var TwitzAccounts = [ // array of the twitter user accounts you want 
 
 // Example
-// ["The title of YOUR widget", "twitter user name", " widget style. 1 = classname1 and 2 = classname2 - see above"],
-// CAUTION. Widget styles should be the same among all the twitz that load together or else design continuity brakes
+// ["widget title", "twitter user name", " widget style. 1 = classname1 and 2 = classname2 - see above"],
+// CAUTION. Combinations of widget styles among the twitz of a step may brake continuity if shuffle is true
 
 ["ZELDMAN", "zeldman", "2"],
 ["SOUEIDAN", "SaraSoueidan", "2"],
@@ -47,10 +46,9 @@ var acnts = [
 ["GSM ARENA", "gsmarena_com", "1"]
 ];
 
-buildTwitz(0,6,true); //Initiating twitz.js
-
+buildTwitz(0,6,true,true); //Initiating twitz.js
 // buildTwitz(
-// 1	start of twitz list to rende .0 the beginning,
-// 2	step of twitz to render .,
-// 3	print load button if more twitz available);
- 
+// 1	start of twitz list to render .0 the beginning,
+// 2	step of twitz to render -less for faster load time-,
+// 3    shuffle the accounts of the step,
+// 4	show load button if more twitz available);

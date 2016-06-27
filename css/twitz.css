@@ -148,7 +148,3 @@ html{font-size:0.7rem;}
     float: none;
     }
 }
-/* VERY SMALL */
-@media only screen and (max-width : 300px) {
-.twitz, .double-twitz {width: 90%;}
-} 

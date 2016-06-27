@@ -3,7 +3,7 @@
  
 ## What is it? 
  
-Twitz.js is a pure js library that **somehow** overcomes most of the hassle and constraints of the twitter API and lets you load and manage many different twitter user timeline widgets effortlessly. 
+A pure js library that **somehow** overcomes most of the hassle and constraints of the twitter API and lets you load and manage many different twitter user timeline widgets effortlessly with a relatively good level of customizability. 
 
 All you have to do is get a twitter list url, and a list widget number. All explained in detail below
  
@@ -38,7 +38,7 @@ Useful to create pages with context related twitter accounts  (eg.news, sports, 
  
 ## Can I customize it? 
  
-You can do a great deal of styling through css and some js setup variables. You can not edit the actual widget though (apart from dimensions) since it comes through an iframe from twitter. In terms of functionality you can set if you want more widgets to load after the first load, the number of widgets to load at every press of the more button, and also where to start within the accounts list. 
+Complete styling of everything but the actual widget through css and some js setup variables. You can not edit the actual widget though (apart from dimensions) since it comes through an iframe from twitter and the theme of it (light/dark) is set on creation. In terms of functionality you can set if you want more widgets to load after the first load, the number of widgets to load at every press of the more button, and also where to start within the accounts list. 
  
 + Every element of the widget container is targetable through css (twitz.css) 
 - The accounts (twitz.setup.js) 
@@ -49,6 +49,4 @@ You can do a great deal of styling through css and some js setup variables. You 
 - The class name for widget style 1 and 2 (twitz.setup.js) 
 - The number of widgets to load on every step (twitz.setup.js) 
 - The load more button text (twitz.setup.js) 
-- To load more or not (twitz.setup.js) 
- 
-Every set of widgets that is loaded is first shuffled - future plans to make this optional as well
+- To load more or not (twitz.setup.js)
