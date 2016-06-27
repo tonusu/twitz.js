@@ -5,7 +5,7 @@
 // Edit variables below
 /************************************************************/
 
-var listlink = https://twitter.com/ExampleTwitterUsername/ExamplePublicTwitterListName; //EDIT THIS. the url of your list
+var listlink = 'https://twitter.com/ExampleTwitterUsername/ExamplePublicTwitterListName'; //EDIT THIS. the url of your list
 var widgetid = '123456789012345678'; //EDIT THIS. the id of your list
 
 var TwitzContainer = 'twitz-container1'; // the container you want to load the twitz in. They will be appended
