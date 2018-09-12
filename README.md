@@ -1,6 +1,8 @@
 
 # twitz.js 
  
+ | NOW DEPRECATED - instead have a look at this https://publish.twitter.com |
+ 
 ## What is it? 
  
 A pure js plugin that **somehow** overcomes most of the hassle and constraints of the twitter API and lets you load and manage many different twitter user timeline widgets effortlessly with a relatively good level of customizability. 
